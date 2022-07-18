@@ -309,7 +309,7 @@ class BJGame
             if ($player->isNpcPlayer()) {
                 continue;
             }
-            $confirmText = $player->getPlayerName() . 'はゲームを続行しますか？' . PHP_EOL;
+            $confirmText = $player->getPlayerName() . 'はゲームを続行しますか？(Y/N)' . PHP_EOL;
             $confirmText = $confirmText . '(一人でも同意しなければゲーム終了です) : ';
             $answer = $this->questionYesNo($confirmText);
             if (!$answer) {
